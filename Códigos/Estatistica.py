@@ -1,7 +1,12 @@
 import Stats
-inteiro = [1, 1, 2, 3, 4]
-Stats.med(inteiro)
-Stats.mediana(inteiro)
-Stats.moda(inteiro)
 
-#a = Stats.mediana(inteiro)
+lista = [0, 0, 0, 0, 0, 0, 0]
+for x in range(7):
+    value = float(input("Informe os valores para a lista: "))
+    lista[x] = value
+
+
+Stats.med(lista)
+Stats.mediana(lista)
+Stats.moda(lista)
+

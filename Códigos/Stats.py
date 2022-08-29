@@ -4,7 +4,7 @@ def med(list):
     sum = 0
     for x in list:
         sum += x
-    print('Média: {}'.format(sum/len(list)))
+    print('\nMédia: {:.2f}'.format(sum/len(list)))
 
 def mediana(list):
     list.sort()

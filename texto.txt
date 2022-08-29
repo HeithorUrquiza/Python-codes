@@ -1,0 +1,5 @@
+Olá
+Seja bem-vindo
+Este é um teste
+Para a leitura de linhas dentro de um arquivo
+Na linguagem python
