@@ -1,19 +1,31 @@
 import time
+problemSize = 1000
+print("%12s%16s" %("ProblemSize", "Seconds"))
 
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-a = lista.index(1)
-print(a)
-'''teste = 10000
-start = time.time()
-
-for i in range(teste):
-    work = 0
-    for j in range(teste):
-        work += 1
-        work -= 1
-    end = time.time()
-    print("tempo: {:.2f}".format(end - start))''' 
-    
+work = 0
+for count in range(problemSize):
+    start = time.time()
+    work += 1
+    work -= 1
+    elapsed = time.time() - start
+    print("%12d%16.2f" % (problemSize, elapsed))
+    problemSize *= 2
+    if problemSize >= 100000000000000000000000000000:
+        break
+  
+  
+'''import time
+problemSize = 10500
+print("%12s%16s" %("ProblemSize", "Seconds"))
+for count in range(problemSize):
+    start = time.time()
+    work = 1
+    for k in range(problemSize):
+        work+=1
+        work-=1
+    elapsed = time.time() - start
+    print("%12d%16.2f" % (problemSize, elapsed))
+    problemSize*= 2'''
 
 
 
