@@ -1,5 +1,3 @@
-from unicodedata import name
-
 
 class Student:
     def __init__(self, name, list):
