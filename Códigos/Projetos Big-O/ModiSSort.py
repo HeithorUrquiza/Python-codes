@@ -13,7 +13,7 @@ def swapReverse(lyst):
         if i == limit:
             break
 
-def selectionSort(lyst, reverse):
+def selectionSort(lyst, reverse = None):
     i = 0
     while i < len(lyst) - 1: # Faz n - 1 pesquisas
         minIndex = i # pelo menor
@@ -28,6 +28,9 @@ def selectionSort(lyst, reverse):
     
     
 lyst = [0, 45, 23, -3, 1, 4, 2, -1]
+selectionSort(lyst)
+print(lyst)
+print("-"*25)
 selectionSort(lyst, 1)
 print(lyst)
 
