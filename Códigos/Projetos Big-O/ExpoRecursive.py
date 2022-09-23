@@ -15,9 +15,8 @@ print(expoRecursive(2, 12))
 print(expoRecursive(3, 4))
 print(expoRecursive(3, 0))
 
-'''
-Complexidade computacional
- - Melhor caso: O(1)
- - Médio caso: O(n)
- - Pior caso: O(n)
- '''
+
+# Complexidade computacional
+# - Melhor caso: O(1)
+# - Médio caso: O(n)
+# - Pior caso: O(n)

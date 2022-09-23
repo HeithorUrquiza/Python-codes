@@ -31,8 +31,7 @@ lyst = [0, 45, 23, -3, 1, 4, 2, -1]
 selectionSort(lyst, 1)
 print(lyst)
 
-'''Complexidade Computacional
- - Melhor caso:
- - Médio caso:
- - Pior caso: 
- '''
+# Complexidade Computacional
+# - Melhor caso: O(n^2)
+# - Médio caso: O(n^2)
+# - Pior caso: O(n^2)

@@ -14,9 +14,8 @@ print(expo(3, 0))
 print(expo(3, 1))
 print(expo(3, 4))
         
-'''
-Complexidade computacional
- - Melhor caso: O(1)
- - Médio caso: O(n)
- - Pior caso: O(n)
- '''
+
+# Complexidade computacional
+# - Melhor caso: O(1)
+# - Médio caso: O(n)
+# - Pior caso: O(n)
