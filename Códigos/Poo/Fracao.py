@@ -16,7 +16,7 @@ class Fracao:
         num = self.numerador * fracao.numerador + fracao.denominador * self.denominador
         den = self.denominador * fracao.denominador
         return Fracao(num, den)
-        
+               
     def subtrair(self, fracao):
         return self.somar(fracao.negar())
         
@@ -34,10 +34,25 @@ class Fracao:
     def negar(self):
         return Fracao(-self.numerador, self.denominador)
     
+    def __str__(self):
+        representation = "{}/{}".format(self.numerador, self.denominador)
+        return representation
     
-a = Fracao(4, 5)
-b = Fracao(3, 5)
-nege = a.negar()
-print(nege.numerador)
-
-
+    def __repr__(self):
+        representation = "Fracao({}, {})".format(self.numerador, self.denominador)
+        return representation
+    
+    def __add__(self, fracao):
+        return self.somar(fracao)
+    
+    def __sub__(self, fracao):
+        return self.subtrair(fracao)
+    
+    def __mul__(self, fracao):
+        return self.multiplicar(fracao)
+    
+# Teste
+if __name__ == '__main__':
+    a = Fracao(2, 3)
+    b = Fracao(1, 3)
+    print(a * b)
