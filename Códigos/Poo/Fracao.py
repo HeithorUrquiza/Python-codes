@@ -34,20 +34,25 @@ class Fracao:
     def negar(self):
         return Fracao(-self.numerador, self.denominador)
     
+    # método para string
     def __str__(self):
         representation = "{}/{}".format(self.numerador, self.denominador)
         return representation
     
+    # método par representação
     def __repr__(self):
         representation = "Fracao({}, {})".format(self.numerador, self.denominador)
         return representation
     
+    # sobrecarg operador soma
     def __add__(self, fracao):
         return self.somar(fracao)
     
+    # sobrecarg operador subtração
     def __sub__(self, fracao):
         return self.subtrair(fracao)
     
+    # sobrecarg operador multiplicação
     def __mul__(self, fracao):
         return self.multiplicar(fracao)
     
